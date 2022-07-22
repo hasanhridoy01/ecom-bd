@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 function Header() {
   return (
@@ -24,7 +25,7 @@ function Header() {
           </ul>
         </div>
         <div className="navbar-end">
-          
+          <Link href=''><button className="btn btn-danger mr-5">Login</button></Link>
         </div>
       </div>
     </div>
