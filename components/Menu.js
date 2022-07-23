@@ -20,13 +20,13 @@ function Menu() {
             foods.slice(0, 9).map(food => {
               return (
                 <>
-                  <div className="card lg:w-96 bg-base-300 shadow-xl image-full">
+                  <div className="card lg:w-96 bg-none shadow-xl image-full">
                     <figure><img src={food.img} alt="Shoes" /></figure>
                     <div className="card-body">
                       <h2 className="card-title">{food.name}</h2>
                       <p></p>
                       <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Buy Now</button>
+                        <Link href={`/${food.id}`}><a className="btn btn-primary">ORDER NOW</a></Link>
                       </div>
                     </div>
                   </div>
@@ -35,7 +35,7 @@ function Menu() {
             })
           }
         </div>
-        <Link href='/allfoods'><a className="btn btn-info mt-5">All Food</a></Link>
+        <Link href='/allfoods'><a className="btn btn-info mt-5">VIEW ALL</a></Link>
       </div>
     </div>
   )

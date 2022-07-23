@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
+import Link from "next/link";
 
 function AllFoods() {
   const [foods, setFoods] = useState([]);
@@ -19,13 +20,13 @@ function AllFoods() {
             foods.map(food => {
               return (
                 <>
-                  <div className="card lg:w-96 bg-base-300 shadow-xl image-full">
+                  <div className="card lg:w-96 bg-none shadow-xl image-full">
                     <figure><img src={food.img} alt="Shoes" /></figure>
                     <div className="card-body">
                       <h2 className="card-title">{food.name}</h2>
                       <p></p>
                       <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Buy Now</button>
+                      <Link href={`/${food.id}`}><a className="btn btn-primary">ORDER NOW</a></Link>
                       </div>
                     </div>
                   </div>
