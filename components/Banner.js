@@ -1,3 +1,4 @@
+import Link from "next/link"
 
 function Banner() {
   return (
@@ -8,7 +9,7 @@ function Banner() {
           <div className="max-w-md">
           <h1 className="mb-3 text-5xl font-bold">Always Choose Good</h1>
           <p className="mb-5">Online Shopping Store In Usa - Discover At Shopwebly! Find Easily. Compare Products. Easy Acces. Quick Results. Search and Discover. Types: 24/7 Accessible, Big Variaty, Instant Results, Products Online.</p>
-          <button className="btn btn-primary">Registration</button>
+          <Link href="/resgistration"><a className="btn btn-primary">Registration</a></Link>
           </div>
         </div>
       </div>
